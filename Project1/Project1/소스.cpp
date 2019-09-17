@@ -72,6 +72,7 @@
 #include <iostream>
 
 using namespace std;
+#pragma warning (disable:4996)
 
 class CarInformation
 {
@@ -116,10 +117,10 @@ public:
 
 	void Print()
 	{
-		cout << "color: " << color << endl;
-		cout << "carnumber: " << carnumber << endl;
-		cout << "speed: " << speed << endl;
-		cout << "gear: " << gear << endl;
+		cout << "color: " << Getcolor() << endl;
+		cout << "carnumber: " << Getcarnumber() << endl;
+		cout << "speed: " << Getspeed() << endl;
+		cout << "gear: " << Getgear() << endl;
 		cout << "ID: " << ID << endl;
 		cout << "name: " << name << endl;
 	}
@@ -127,6 +128,61 @@ public:
 
 int main()
 {
-	CarInformation car_info;
+	CarInformation *car_info = new CarInformation;
+	C_Car *mcar = new C_Car;
 
+	char tempColor[256];
+	int tempSpeed;
+	int tempGear;
+	int tempNumber;
+	char tempName[256];
+	int tempID;
+
+	cout << "car_info color:";
+	cin >> tempColor;
+
+	cout << "car_info number:";
+	cin >> tempNumber;
+
+	cout << "car_info speed:";
+	cin >> tempSpeed;
+
+	cout << "car_info Gear:";
+	cin >> tempGear;
+
+	car_info->Setcolor(tempColor);
+	car_info->Setcarnumber(tempNumber);
+	car_info->Setspeed(tempSpeed);
+	car_info->Setgear(tempGear);
+
+	cout << "mCar id:";
+	cin >> tempID;
+
+	cout << "mcar name:";
+	cin >> tempName;
+
+	cout << "mcar_info color:";
+	cin >> tempColor;
+
+	cout << "mcar_info number:";
+	cin >> tempNumber;
+
+	cout << "mcar_info speed:";
+	cin >> tempSpeed;
+
+	cout << "mcar_info Gear:";
+	cin >> tempGear;
+
+	mcar->SetID(tempID);
+	mcar->Setname(tempName);
+	mcar->Setcolor(tempColor);
+	mcar->Setcarnumber(tempNumber);
+	mcar->Setspeed(tempSpeed);
+	mcar->Setgear(tempGear);
+
+	car_info->Print();
+	mcar->Print();
+
+	delete car_info;
+	delete mcar;
 }
