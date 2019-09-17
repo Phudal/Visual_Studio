@@ -80,7 +80,7 @@ private:
 	int carnumber;
 	int speed;
 	int gear;
-	
+
 public:
 	char* Getcolor() { return color; }
 	int Getcarnumber() { return carnumber; }
@@ -92,7 +92,7 @@ public:
 	void Setspeed(int data) { speed = data; }
 	void Setgear(int data) { gear = data; }
 
-	void Print() 
+	void Print()
 	{
 		cout << "color: " << color << endl;
 		cout << "carnumber: " << carnumber << endl;
@@ -128,5 +128,5 @@ public:
 int main()
 {
 	CarInformation car_info;
-	
+
 }
