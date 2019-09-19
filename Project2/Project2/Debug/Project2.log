@@ -1,0 +1,6 @@
+﻿  추상클래스2cpp.cpp
+c:\users\phudal\source\repos\project2\project2\추상클래스2cpp.cpp(8): error C2628: '_Student' 다음에 'int'이(가) 올 수 없습니다. ';'이 있어야 합니다.
+c:\users\phudal\source\repos\project2\project2\추상클래스2cpp.cpp(9): error C2027: 정의되지 않은 형식 '_Student'을(를) 사용했습니다.
+  c:\users\phudal\source\repos\project2\project2\추상클래스2cpp.cpp(6): note: '_Student' 선언을 참조하십시오.
+c:\users\phudal\source\repos\project2\project2\추상클래스2cpp.cpp(9): error C2079: 'main'은(는) 정의되지 않은 struct '_Student'을(를) 사용합니다.
+c:\users\phudal\source\repos\project2\project2\추상클래스2cpp.cpp(9): error C3874: 'main'의 반환 형식이 'int'이어야 하는데 '_Student'입니다.
